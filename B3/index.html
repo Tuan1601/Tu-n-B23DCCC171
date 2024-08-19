@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm phần tử mới vào DOM</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Anh tuấn</li>
+        <li>Tuấn Anh</li>
+    </ul>
+    <script>
+        let newListItem = document.createElement("li");
+        newListItem.textContent = "New Anh Tuấn";
+        document.getElementById("list").appendChild(newListItem);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi nội dung bằng cách thao tác với Class</title>
+</head>
+<body>
+    <div class="item">Tuấn 1</div>
+    <div class="item">Tuấn 2</div>
+    <div class="item">Tuấn 3</div>
+    <script>
+        let items = document.getElementsByClassName("item");
+        for (let i = 0; i < items.length; i++) {
+            items[i].textContent = "Updated item";
+        }
+    </script>
+</body>
+</html>
